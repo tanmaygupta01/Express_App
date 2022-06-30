@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-style: italic;
+            font-size: 3.5em;
+        }
+        
+        form {
+            width: 500px;
+            margin: 15px auto;
+            padding: 15px;
+            box-shadow: 4px 11px 14px grey;
+        }
+        
+        .form-control label {
+            display: block;
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            font-style: italic;
+            font-weight: bold;
+        }
+        
+        .form-control input {
+            display: block;
+            font-size: 1.3rem;
+            width: 90%;
+            border-radius: 5px;
+            margin-bottom: 2px;
+        }
+        
+        .form-control button {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            border-radius: 5px;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Add New User</h1>
+    <form action="/users" method="post">
+        <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="form-control">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <div class="form-control">
+            <button>Add User</button>
+        </div>
+    </form>
+</body>
+
+</html>
